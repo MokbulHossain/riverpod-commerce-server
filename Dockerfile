@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:18
 
 # Create app directory
 WORKDIR /home/ubuntu/tukitaki/oms_fileupload_brodcast
