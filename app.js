@@ -58,6 +58,6 @@ mongoose
 const PORT = env.PORT;
 const IP = env.IP;
 
-app.listen(PORT, IP, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on http://${IP}:${PORT}`);
 });
