@@ -16,5 +16,4 @@ RUN npm install express
 # Bundle app source
 COPY . .
 
-EXPOSE 9050
 CMD [ "npm", "start" ]
