@@ -26,14 +26,14 @@ exports.sendMail = async (
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error('Error sending email:', error);
-      if (errorMessage) {
-        return res.status(500).json({ message: errorMessage });
-      }
+      // if (errorMessage) {
+      //   return res.status(500).json({ message: errorMessage });
+      // }
     }
     console.log('Email sent:', info.response);
-    if (successMessage) {
-      return res.json({ message: 'Password reset OTP sent to your email' });
-    }
-    return res.send().end();
+    // if (successMessage) {
+    //   return res.json({ message: 'Password reset OTP sent to your email' });
+    // }
+    // return res.send().end();
   });
 };
